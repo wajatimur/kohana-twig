@@ -1,4 +1,4 @@
-Twig Module
+Kohana Twig Module
 ===========
 
 From [twig-project.org](http://twig-project.org)
@@ -13,10 +13,9 @@ the template design.
 > **Flexible**: Twig is powered by a flexible lexer and parser. This allows the developer
 to define its own custom tags and filters, and create its own DSL.
 
-Key Features
+Modul Key Features
 -------------
 
-* Sandbox configuration
 * Syntax 〃
 * Kohana template loader. Now templates aren't restricted to one directory
 * Updated to follow the Kohana convention
@@ -46,9 +45,8 @@ Pretty similar to using the Controller\_Template class.
 
 Credit
 ------
-[Jonathan Geiger](http://github.com/jonathangeiger/kohana-twig)
-[John Heathco](http://github.com/jheathco/kohana-twig) for creating the original modules.
-
+*[Jonathan Geiger](http://github.com/jonathangeiger/kohana-twig).
+*[John Heathco](http://github.com/jheathco/kohana-twig) for creating the original modules.
 
 Support
 ---------
@@ -57,4 +55,4 @@ https://github.com/wajatimur/kohana-twig/issues
 Alternatives
 ---------
 
-* [kotwig](http://github.com/Burgestrand/kotwig) by [Burgestrand](http://github.com/Burgestrand)
+*[kotwig](http://github.com/Burgestrand/kotwig) by [Burgestrand](http://github.com/Burgestrand)
