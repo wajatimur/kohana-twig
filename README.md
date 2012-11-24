@@ -23,7 +23,7 @@ Modul Key Features
 Installation
 ------------
 
-1. `git submodule add https://ThePixelDeveloper@github.com/ThePixelDeveloper/kohana-twig.git modules/twig`
+1. `git submodule add https://github.com/wajatimur/kohana-twig.git modules/twig`
 2. `cd modules/twig && git submodule update --init`
 3. Enable twig in your bootstrap.php file
 4. Extend `Controller_Template_Twig`
@@ -45,8 +45,8 @@ Pretty similar to using the Controller\_Template class.
 
 Credit
 ------
-*[Jonathan Geiger](http://github.com/jonathangeiger/kohana-twig).
-*[John Heathco](http://github.com/jheathco/kohana-twig) for creating the original modules.
+* [Jonathan Geiger](http://github.com/jonathangeiger/kohana-twig).
+* [John Heathco](http://github.com/jheathco/kohana-twig) for creating the original modules.
 
 Support
 ---------
@@ -55,4 +55,4 @@ https://github.com/wajatimur/kohana-twig/issues
 Alternatives
 ---------
 
-*[kotwig](http://github.com/Burgestrand/kotwig) by [Burgestrand](http://github.com/Burgestrand)
+* [kotwig](http://github.com/Burgestrand/kotwig) by [Burgestrand](http://github.com/Burgestrand)
