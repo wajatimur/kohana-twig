@@ -22,8 +22,8 @@ class Kohana_Twig_Environment
 
 		if (!isset($instances[$env]))
 		{
-			$config = Kohana::config('twig.'.$env);
-			
+			$config = Kohana::$config->load('twig.'.$env);
+
 			// Create the the loader
 			$twig_loader = $config['loader']['class'];
 			$loader = new $twig_loader($config['loader']['options']);
@@ -38,7 +38,7 @@ class Kohana_Twig_Environment
 			}
 
 			// Add the sandboxing extension.
-			$policy = new Twig_Sandbox_SecurityPolicy
+			/*$policy = new Twig_Sandbox_SecurityPolicy
 			(
 				$config['sandboxing']['tags'],
 				$config['sandboxing']['filters'],
@@ -46,7 +46,7 @@ class Kohana_Twig_Environment
 				$config['sandboxing']['properties']
 			);
 
-			$twig->addExtension(new Twig_Extension_Sandbox($policy, $config['sandboxing']['global']));
+			$twig->addExtension(new Twig_Extension_Sandbox($policy, $config['sandboxing']['global']));*/
 		}
 
 		return $instances[$env];

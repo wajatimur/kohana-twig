@@ -120,7 +120,7 @@ abstract class Kohana_Twig
 		if ($env instanceof Twig_Environment == FALSE)
 		{
 			// Load the default extension from the config
-			$this->_extension = Kohana::config('twig.'.$env.'.loader.extension');
+			$this->_extension = Kohana::$config->load('twig.'.$env.'.loader.extension');
 			
 			$env = Kohana_Twig_Environment::instance($env);
 		}
@@ -188,7 +188,7 @@ abstract class Kohana_Twig
 		catch (Exception $e)
 		{
 			// Display the exception message
-			Kohana::exception_handler($e);
+			Kohana_Kohana_Exception::handler($e);
 
 			return '';
 		}
@@ -403,7 +403,7 @@ abstract class Kohana_Twig
 		{
 			throw new Kohana_View_Exception('You must set the file to use within your view before rendering');
 		}
-		
+
 		// Combine local and global data and capture the output
 		return $this->_environment->loadTemplate($this->path())->render($this->as_array());
 	}

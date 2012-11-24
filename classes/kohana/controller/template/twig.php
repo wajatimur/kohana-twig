@@ -39,12 +39,12 @@ abstract class Kohana_Controller_Template_Twig extends Controller
 				$this->template = $this->request->directory.DIRECTORY_SEPARATOR.$this->template;
 			}
 		}
-
+		
 		if ($this->auto_render)
 		{
 			// Load the twig template.
 			$this->template = Twig::factory($this->template, $this->environment);
-
+			
 			// Return the twig environment
 			$this->environment = $this->template->environment();
 		}
@@ -62,7 +62,7 @@ abstract class Kohana_Controller_Template_Twig extends Controller
 		if ($this->auto_render)
 		{
 			// Auto-render the template
-			$this->request->response = $this->template;
+			$this->response->body( $this->template->render() );
 		}
 
 		return parent::after();

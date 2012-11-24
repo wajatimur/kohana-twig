@@ -23,8 +23,9 @@ return array
 			'trim_blocks'         => FALSE,
 			'charset'             => 'utf-8',
 			'base_template_class' => 'Twig_Template',
-			'cache'               => APPPATH.'cache/twig',
+			'cache'               => FALSE, //APPPATH.'cache/twig',
 			'auto_reload'         => TRUE,
+			'autoescape'          => FALSE,
 			/**
 			 * Allow customization of the Twig Syntax.
 			 * Note : This is waiting to be fixed upstream by fabien
@@ -55,12 +56,12 @@ return array
 		'loader' => array
 		(
 			'class' => 'Twig_Loader_Kohana',
-			'extension' => 'html',
+			'extension' => 'php',
 			'options' => array(),
 		),
 		'extensions' => array
 		(
-			'Twig_Extension_Escaper',
+			//'Twig_Extension_Escaper',
 			'Kohana_Twig_Extensions',
 			'Twig_Extension_Optimizer',
 		),
