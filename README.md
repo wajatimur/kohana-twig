@@ -13,9 +13,8 @@ the template design.
 > **Flexible**: Twig is powered by a flexible lexer and parser. This allows the developer
 to define its own custom tags and filters, and create its own DSL.
 
-Credit goes to [Jonathan Geiger](http://github.com/jonathangeiger/kohana-twig) and
-[John Heathco](http://github.com/jheathco/kohana-twig) for creating the original modules.
-This fork contains the following improvements.
+Key Features
+-------------
 
 * Sandbox configuration
 * Syntax 〃
@@ -45,10 +44,17 @@ Pretty similar to using the Controller\_Template class.
       }
     }
 
-Not Happy?
----------
+Credit
+------
+[Jonathan Geiger](http://github.com/jonathangeiger/kohana-twig)
+[John Heathco](http://github.com/jheathco/kohana-twig) for creating the original modules.
 
-Either [file a bug report](http://github.com/ThePixelDeveloper/kohana-twig/issues)
-or try an alternative project:
+
+Support
+---------
+https://github.com/wajatimur/kohana-twig/issues
+
+Alternatives
+---------
 
 * [kotwig](http://github.com/Burgestrand/kotwig) by [Burgestrand](http://github.com/Burgestrand)
