@@ -64,6 +64,7 @@ return array
 			//'Twig_Extension_Escaper',
 			'Kohana_Twig_Extensions',
 			'Twig_Extension_Optimizer',
+			'Atlantis_Twig_Extensions'
 		),
 	),
 );
