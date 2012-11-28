@@ -15,7 +15,7 @@ return array
 			 * cache
 			 *  null  : Will create a directory under the temporary system directory.
 			 *  false : Turn off caching all-together.
-			 *  path  : Absolute path to cache directory (enabled).
+			 *  path  : Absolute path to cache directory (enabled). eg: APPPATH.'cache/twig
 			 * 
 			 * auto_reload : Update the template when the source code changes
 			 */
@@ -23,7 +23,7 @@ return array
 			'trim_blocks'         => FALSE,
 			'charset'             => 'utf-8',
 			'base_template_class' => 'Twig_Template',
-			'cache'               => FALSE, //APPPATH.'cache/twig',
+			'cache'               => FALSE,
 			'auto_reload'         => TRUE,
 			'autoescape'          => FALSE,
 			/**
